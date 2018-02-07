@@ -109,4 +109,4 @@ Invoke-Command -Session $Session -ScriptBlock $disableRemoteNode -ArgumentList $
 # 0 -> Available
 # 1 -> Drain
 # 2 -> Unavailable
-# 3 -> Unavailable
+# 3 -> Unavailable (Gracefully)
