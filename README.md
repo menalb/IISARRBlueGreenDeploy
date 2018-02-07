@@ -5,8 +5,7 @@ This repository contains some PowerShell scripts that can help in dealing with a
 
 [IIS Server Farm](https://docs.microsoft.com/en-us/iis/extensions/configuring-application-request-routing-arr/define-and-configure-an-application-request-routing-server-farm)
 
-[Rolling Deployment With Octopus]
-(https://octopus.com/docs/deployment-patterns/rolling-deployments)
+[Rolling Deployment With Octopus](https://octopus.com/docs/deployment-patterns/rolling-deployments)
 
 ## General Info
 
