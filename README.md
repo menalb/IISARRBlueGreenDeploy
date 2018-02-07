@@ -33,4 +33,4 @@ Example of a request to an hypothetical URL that is the endpoint of the newly de
 
 ## Enalbe Farm Node (enableFarmNode.ps1)
 
-Put back online ine the Server Farm the previously removed node.
+Put back online the Server Farm the previously removed node.
