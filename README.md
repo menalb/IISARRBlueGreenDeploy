@@ -12,7 +12,7 @@ This repository contains some PowerShell scripts that can help in dealing with a
 To connect to the IIS it uses the **Microsoft.Web.Administration** objects.
 This allows to browse through all the IIS features installed into the target instance.
 
-Because these scripts runs by the Octopus Tentacle installed in the deployment environment, they are running remote instructions.
+Because these scripts runs by the **Octopus Tentacle** installed in the deployment environment, they are running remote instructions.
 The Tentacle runs the script targetting the IIS Server Farm that in installed in a remote machine.
 
 This is the reason for the Invoke-Command
@@ -26,6 +26,10 @@ Invoke-Command -Session $Session -ScriptBlock $scriptToExecute -ArgumentList $pa
 
 Remove a single instance from the web farm. 
 In the load balancer, sets the node as not available for new connections and drain all the existing connections.
+
+## Warm-up instance (warmup.ps1)
+
+Example of a request to an hypothetical URL that is the endpoint of the newly deployed instance.
 
 ## Enalbe Farm Node (enableFarmNode.ps1)
 
