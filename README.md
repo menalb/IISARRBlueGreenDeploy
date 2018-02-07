@@ -1,11 +1,14 @@
-# IISARRBlueGreenDeploy
-How to implement Blue Green Deploy using the IIS ARR module and a bunch of PowerShell scripts for Octopus Deploy
+# IIS ARR Blue Green Deploy
+How to implement Blue Green Deploy using the IIS ARR module and a bunch of PowerShell scripts for Octopus Deploy.
 
-This repository contains some PowerShell scripts that can help in dealing with an IIS server farm
+This repository contains some PowerShell scripts that can help in dealing with an IIS server farm.
 
 [IIS Server Farm](https://docs.microsoft.com/en-us/iis/extensions/configuring-application-request-routing-arr/define-and-configure-an-application-request-routing-server-farm)
 
-## General info
+[Rolling Deployment With Octopus]
+(https://octopus.com/docs/deployment-patterns/rolling-deployments)
+
+## General Info
 
 To connect to the IIS it uses the **Microsoft.Web.Administration** objects.
 This allows to browse through all the IIS features installed into the target instance.
@@ -24,3 +27,7 @@ Invoke-Command -Session $Session -ScriptBlock $scriptToExecute -ArgumentList $pa
 
 Remove a single instance from the web farm. 
 In the load balancer, sets the node as not available for new connections and drain all the existing connections.
+
+## Enalbe Farm Node (enableFarmNode.ps1)
+
+Put back online ine the Server Farm the previously removed node.
